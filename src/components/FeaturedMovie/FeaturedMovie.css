@@ -1,0 +1,115 @@
+.featured {
+    height: 100vh;
+}
+
+.featured__overlayVertical {
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+    height: inherit;
+    width: inherit;
+}
+
+.featured__overlayHorizontal {
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    padding-top: 70px;
+    width: inherit;
+}
+
+.featured__title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.featured__info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.featured__info div {
+    display: inline-block;
+}
+
+.featured__info div:not(:last-child) {
+    margin-right: 15px;
+}
+
+.featured__points {
+    display: inline-block;
+    color: #46d369;
+}
+
+.featured__description {
+    color: #999;
+    font-size: 20px;
+    margin-top: 15px;
+    max-width: 40%;
+}
+
+.featured__buttons {
+    margin-top: 15px;
+}
+
+.featured__buttons a {
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    text-decoration: none;
+}
+
+.featured__buttons a:hover {
+    opacity: 0.8;
+}
+
+.featured__buttons a:first-child {
+    background: #fff;
+    color: #111;
+    margin-right: 10px;
+}
+
+.featured__buttons a:last-child {
+    background: #333;
+    color: #fff;
+}
+
+.featured__genres {
+    color: #999;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+@media(max-width: 769px) {
+    .featured {
+        height: 95vh;
+    }
+
+    .featured__title {
+        font-size: 40px;
+    }
+
+    .featured__info {
+        font-size: 16px;
+    }
+
+    .featured__description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .featured__buttons a {
+        font-size: 16px;
+    }
+
+    .featured__genres {
+        font-size: 14px;
+    }
+}
